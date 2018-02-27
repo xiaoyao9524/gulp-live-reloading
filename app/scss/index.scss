@@ -1,0 +1,19 @@
+@function toRem($px, $w:37.5) {
+  @return ($px / $w) * 1rem
+}
+
+.test {
+  width: toRem(100);
+  height: 100px;
+  background: green;
+  .aaa {
+    color: pink;
+    font-size: toRem(30);
+  }
+}
+.t {
+  width: 100px;
+  height: 500px;
+  margin-top: 500px;
+  background: palegoldenrod;
+}

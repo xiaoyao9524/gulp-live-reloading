@@ -1,0 +1,13 @@
+.test {
+  width: 2.66667rem;
+  height: 100px;
+  background: green; }
+  .test .aaa {
+    color: pink;
+    font-size: 0.8rem; }
+
+.t {
+  width: 100px;
+  height: 500px;
+  margin-top: 500px;
+  background: palegoldenrod; }
