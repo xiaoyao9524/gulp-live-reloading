@@ -21,6 +21,18 @@ gulp.task('server', function() {
 
 gulp.task('sass', function(){
   return gulp.src('./app/scss/*.scss')
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
   .pipe(gulp.dest('./app/css'));
 });
+/*
+  outputStyle:
+    nested：嵌套缩进的css代码，它是默认值。
+
+    expanded：没有缩进的、扩展的css代码。
+
+    compact：简洁格式的css代码。
+
+    compressed：压缩后的css代码。
+
+    如需改变压缩格式，可以直接命令行运行： "gulp sass" 来直接编译
+*/
